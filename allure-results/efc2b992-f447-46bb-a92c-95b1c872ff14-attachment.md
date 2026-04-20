@@ -1,0 +1,81 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: hybrid/edge-case.spec.ts >> Hybrid: API Verification and UI Session Validation
+- Location: tests/hybrid/edge-case.spec.ts:4:5
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByTestId('user-widget-link')
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for getByTestId('user-widget-link')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - separator [ref=e3]
+  - iframe [ref=e8]:
+    - generic [ref=f2e2]:
+      - generic [ref=f2e3]:
+        - checkbox "I'm not a robot" [ref=f2e7]
+        - generic [ref=f2e11]: I'm not a robot
+      - generic [ref=f2e15]: reCAPTCHA
+  - separator [ref=e9]
+  - generic [ref=e10]:
+    - text: About this page
+    - text: Our systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot.
+    - link "Why did this happen?" [ref=e11] [cursor=pointer]:
+      - /url: "#"
+    - generic [ref=e12]:
+      - text: "IP address: 39.38.221.201"
+      - text: "Time: 2026-04-20T19:52:25Z"
+      - text: "URL: https://www.google.com/search?q=open.spotify.com/artist6&sei=94Pmaa6rGImbseMPt-_L4A4"
+```
+
+# Test source
+
+```ts
+  1  | import { test } from '../../fixtures/base.fixture';
+  2  | import { expect } from '@playwright/test';
+  3  | 
+  4  | test('Hybrid: API Verification and UI Session Validation', async ({ userController, page }) => {
+  5  | 
+  6  |     await test.step('STEP 1: Verify API Infrastructure', async () => {
+  7  |         const response = await userController.getSmokeTestData();
+  8  |         expect(response.status()).toBe(200);
+  9  |         const data = await response.json();
+  10 |         console.log(`Successfully verified API Logic. Title: ${data.title}`);
+  11 |     });
+  12 | 
+  13 |     await test.step('STEP 2: Verify UI Session (Already Logged In)', async () => {
+  14 |         // Go to Spotify Home
+  15 |         await page.goto('https://www.google.com/search?q=open.spotify.com/artist6'); 
+  16 |         
+  17 |         // Because of storageState in your config, this should NOT ask for login.
+  18 |         // We look for the 'User Widget' to prove we are inside the app.
+  19 |         const userWidget = page.getByTestId('user-widget-link');
+  20 |         
+  21 |         // We use a longer timeout because Spotify is a heavy app
+> 22 |         await expect(userWidget).toBeVisible({ timeout: 15000 });
+     |                                  ^ Error: expect(locator).toBeVisible() failed
+  23 |         
+  24 |         console.log('UI Verification: Session is active and User is logged in!');
+  25 |     });
+  26 | });
+```

@@ -1,0 +1,152 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwjZC5-INhD2-ml-6QKpc-oNZ6Y-19R-2gcYDBTkmpycytisLaSfbmOQ1qHEipJwPhSAKkyv9drunEPnpEc",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1792265297.938138,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sp_t",
+      "value": "128c22a4-805a-4a2f-b704-ab61a3d3a9a3",
+      "domain": ".spotify.com",
+      "path": "/",
+      "expires": 1808249299.038424,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Host-CI-STATE",
+      "value": "AQDvLbB5gqFZISa-dGjy1iTVtqWRM6j9ae2olA-tspZ-Oazxi5K1eFmVfo_DN1CDpdRCKy-vHS1pQFfWUeFJKKJmPzPVfVBGmVju-8109-DzMvCpEpa-bVTjqomMyLnoMZUk7C3VWNUbuzQZnGh8DCPj7Q1itfcIaZVocbGoiCHXe-GjqJ8",
+      "domain": "accounts.spotify.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Host-device_id",
+      "value": "AQCxFVz7mBabT_XLGi8cBJiGa0k4Z_6xEieSE8RkrbXsBC05rPfqs94nJWTcKSM64y5hc1AT8cSQtvOHqFMeWTluUjZGxSySrMs",
+      "domain": "accounts.spotify.com",
+      "path": "/",
+      "expires": 1811273293.758709,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sp_tr",
+      "value": "false",
+      "domain": ".accounts.spotify.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sp_landing",
+      "value": "https%3A%2F%2Fchallenge.spotify.com%2Fc%2Fe58163a6-9c41-45fa-953d-fda0e592d3aa-1%2F341af365-2ed8-4962-a53a-668e191d9f1a%2Femail",
+      "domain": ".spotify.com",
+      "path": "/",
+      "expires": 1776799694.191458,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sp_landingref",
+      "value": "https%3A%2F%2Faccounts.spotify.com%2F",
+      "domain": ".spotify.com",
+      "path": "/",
+      "expires": 1776799694.191595,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sp_dc",
+      "value": "AQBJvgpTp_ozwKdfsqaIFWWemuaBW_hF6W-MprlbjR4a8MFhvq9C5PCIOTn2NXsPHycr7KED1cStMVRv3EkV0MXHi-1iM7hEDBqZZ2m2B2okBJsSKna-689_Cdeg5wbxy6WZYdGdtg9B37gkh4uJ6_5DD2hMWcdE4iuFAvmPlYSwlwqwB6xmvmoxZxdzhOeWtzHEt-buvmDRtSByZyc",
+      "domain": ".spotify.com",
+      "path": "/",
+      "expires": 1808249298.312492,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sp_key",
+      "value": "12db4bb3-c03c-4532-8e20-2dbce721015e",
+      "domain": ".spotify.com",
+      "path": "/",
+      "expires": 1808249298.312762,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sp_sso_csrf_token",
+      "value": "013acda719d6f4b3cc2bd471958f42402c8122933431373736373133323938363836",
+      "domain": ".accounts.spotify.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Host-sp_csrf_sid",
+      "value": "7f71b56b7422618698e210e28413d3925c615bfceb67886a49d0cb16a816f0bf",
+      "domain": "accounts.spotify.com",
+      "path": "/",
+      "expires": 1776716898.666542,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sp_gaid",
+      "value": "0088fcc1c1d9c35b0563970ece1f191ce1a8dfc020ed2c5e5ccd91",
+      "domain": ".spotify.com",
+      "path": "/",
+      "expires": 1781897299.038567,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://accounts.spotify.com",
+      "localStorage": [
+        {
+          "name": "_grecaptcha",
+          "value": "09AKhCRwgaDgJLnWWSB_0h4VDN5bodBuO-Ba88gC-TpCAJ0iwanpwIXuBVPOakAOzCfmLn15dAm5zxpfaqpwvlfjPiAgLevSGdeob7wyug5NjKFDRPYv0FsOkTBvCb9r_6"
+        },
+        {
+          "name": "com.spotify.single.item.cache:accounts-sso",
+          "value": "{\"key\":\"ed9d5d2483ff7127\",\"value\":{\"#v\":\"1\",\"passwordless\":true,\"#configurationAssignmentId\":\"2293fc4f-4f89-160b-d163-9a5e70212c71:0\",\"#groupIds\":{\"passwordless\":1243118},\"#fetchTimeMillis\":1776713299854}}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MThhNGxnMXg3YnN0Mg=="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aACwDMCvOWPwDrZOE6UyaFQYCtW1TjfNPdadjKIBc3NOAh2zv8TNL9JmN8JqNtyuQPYOteOs"
+        }
+      ]
+    }
+  ]
+}
