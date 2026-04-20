@@ -18,6 +18,9 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
+      env: 
+      SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }} 
+      SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
       run: npx playwright test tests/hybrid/edge-case.spec.ts --project=chromium --no-deps
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}

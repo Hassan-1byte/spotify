@@ -15,7 +15,6 @@ export default defineConfig({
     // Base URL from .env
     baseURL: process.env.SPOTIFY_BASE_URL || 'https://open.spotify.com',
 
-    // This is where the magic happens: Session Persistence
     storageState: 'state.json',
 
     trace: 'on-first-retry',
